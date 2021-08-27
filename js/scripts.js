@@ -1,9 +1,8 @@
 //Business Logic for pizza selection
-let price = 0;
-
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
+  this.price = 0;
 }
 
 Pizza.prototype.ToppingPrice = function() {
@@ -24,8 +23,8 @@ Pizza.prototype.SizePrice= function() {
 }
 
 Pizza.prototype.totalPrice = function() {
-  this.SizePrice;
   this.ToppingPrice;
+  this.SizePrice;
 }
 
 //UI 
@@ -36,7 +35,7 @@ $(document).ready(function() {
     const size = $("#size").val
     const toppings = $('input:checkbox[name=toppings]:checked').map(function() {
       return this.value;
-    }) 
+    });
 
     let finalPrice = new Pizza(size, toppings);
     finalPrice.totalPrice();
