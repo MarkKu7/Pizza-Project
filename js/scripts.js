@@ -5,12 +5,14 @@ function Pizza(size, toppings) {
   this.price = 0;
 }
 
+//1$ per topping
 Pizza.prototype.toppingCost = function () {
   for (let i = 0; i < this.toppings.length; i++) {
     this.price += 1;
   }
 }
 
+//1$ for small, 3 for medium, 5 for large
 Pizza.prototype.sizeCost = function () {
   const stPrice = 10;
   if (this.size === "Large (14 inches)") {
@@ -38,6 +40,6 @@ $(document).ready(function () {
 
     let displayPrice = new Pizza(size, toppings);
     displayPrice.totalPrice();
-    $("#totalprice").html(`<p>Your total is $${displayPrice.price}</p>`);
+    $("#finalprice").html(`<p>Your total is $${displayPrice.price}</p>`);
   });
 });
