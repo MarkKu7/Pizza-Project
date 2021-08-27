@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -7,45 +8,56 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
+
 <body>
   <div class="container">
     <h1>Pizza Place!</h1>
-      <form id="selectSize">
-        <div class="form-group">
+    <form id="selectSize">
+      <div class="form-group">
         <legend>Select your size:</legend>
-          <select class="form-control" id="size">
-            <option>Small (10 inches)</option>
-            <option>Medium (12 inches)</option>
-            <option>Large (14 inches)</option>
-          </select>
-        </div>
+        <select class="form-control" id="size">
+          <option>Small (10 inches)</option>
+          <option>Medium (12 inches)</option>
+          <option>Large (14 inches)</option>
+        </select>
+      </div>
 
-        <fieldset class="toppings">
-          <legend>Choose Your Pizza Toppings Below</legend>
-            <div>
-              <input type="checkbox" id="pepporoni" name="toppings" value="pepporoni"></input>
-              <label for="pepporoni">Pepporoni</label>
-            </div>
-            <div>
-              <input type="checkbox" id="sausage" name="toppings" value="sausage"></input>
-              <label for="sausage">Sausage</label>
-            </div>
-            <div>
-              <input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
-              <label for="bacon">Bacon</label>
-            </div>
-            <div>
-              <input type="checkbox" id="mushroom" name="toppings" value="mushroom"></input>
-              <label for="mushroom">Mushrooms</label>
-            </div>
-            <div>
-              <input type="checkbox" id="greenpepper" name="toppings" value="greenpepper"></input>
-              <label for="greenpepper">Green Peppers</label>
-            </div>
-            <div>
-              <input type="checkbox" id="olive" name="toppings" value="olive"></input>
-              <label for="olive">Olives</label>
-            </div>
-        </fieldset>
+      <fieldset class="toppings">
+        <legend>Choose Your Pizza Toppings Below</legend>
+        <div>
+          <input type="checkbox" id="pepporoni" name="toppings" value="pepporoni"></input>
+          <label for="pepporoni">Pepporoni</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sausage" name="toppings" value="sausage"></input>
+          <label for="sausage">Sausage</label>
+        </div>
+        <div>
+          <input type="checkbox" id="bacon" name="toppings" value="bacon"></input>
+          <label for="bacon">Bacon</label>
+        </div>
+        <div>
+          <input type="checkbox" id="mushroom" name="toppings" value="mushroom"></input>
+          <label for="mushroom">Mushrooms</label>
+        </div>
+        <div>
+          <input type="checkbox" id="greenpepper" name="toppings" value="greenpepper"></input>
+          <label for="greenpepper">Green Peppers</label>
+        </div>
+        <div>
+          <input type="checkbox" id="olive" name="toppings" value="olive"></input>
+          <label for="olive">Olives</label>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn-succes">Order Pizza!</button>
+    </form>
+  </div>
+
+  <div id="finalprice">
+    <p></p>
+  </div>
+
+  </div>
 </body>
+
 </html>

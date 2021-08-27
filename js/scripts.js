@@ -27,3 +27,20 @@ Pizza.prototype.totalPrice = function() {
   this.SizePrice;
   this.ToppingPrice;
 }
+
+//UI 
+
+$(document).ready(function() {
+  $("form#selectSize").submit(function(event) {
+    event.preventDefault();
+    const size = $("#size").val
+    const toppings = $('input:checkbox[name=toppings]:checked').map(function() {
+      return this.value;
+    }) 
+
+    let finalPrice = new Pizza(size, toppings);
+    finalPrice.totalPrice();
+    $("#finalprice").html(`<p>Your pizza costs $${finalPrice.price}</p>`);
+  });
+});
+  
