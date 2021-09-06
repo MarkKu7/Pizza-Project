@@ -1,5 +1,11 @@
+
+# By Mark Chang
+
 # Pizza Parlor
 
+#### _{Brief description of application}_
+
+#### By _**{List of contributors}**_
 
 ## Technologies Used
 
@@ -11,6 +17,7 @@
 ## Description
 
 Directs user to an website where s/he can order a pizza based off of size and toppings. 
+
 
 ## Specs
 Test(1)
@@ -33,10 +40,12 @@ Describe:totalPrice();
 Test: takes in topping and size functions and returns a total price
 Expect: totalPrice = x
 
+
 ## Setup/Installation Requirements
 
 * Clone repository from Github to users dekstop
 * Open Directory in text editor of choice
+* Or visit file on github at https://github.com/MarkKu7/Pizza-Project.git
 
 
 ## Known Bugs
@@ -51,8 +60,7 @@ Copyright(c)2021 Mark Chang
 
 ## Contact Information
 
-Mark Chang: Marksrc7@gmail.com
-
+Marksrc7@gmail.com
 
 
 
