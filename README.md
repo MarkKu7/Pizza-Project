@@ -1,11 +1,9 @@
 
-# By Mark Chang
-
 # Pizza Parlor
 
-#### _{Brief description of application}_
+#### Webpage to order Pizza!
 
-#### By _**{List of contributors}**_
+#### By Mark Chang
 
 ## Technologies Used
 
